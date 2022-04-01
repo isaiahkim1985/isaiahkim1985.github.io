@@ -16,14 +16,23 @@ tabs:
   archives: 归档
   about: 关于
 
+<<<<<<< HEAD
 # text displayed in the search bar
 search:
   hint: 搜索
   cancel: 取消
+=======
+# the text displayed in the search bar & search results
+search:
+  hint: 搜索
+  cancel: 取消
+  no_results: 搜索结果为空
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 
 panel:
   lastmod: 最近更新
   trending_tags: 热门标签
+<<<<<<< HEAD
   toc: 目录
 
 #  The liquid date format › http://strftime.net/
@@ -33,6 +42,9 @@ date_format:
     long: '%F'
     short: '%m-%d'
     archive_month: '%m月'
+=======
+  toc: 文章内容
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 
 copyright:
   # Shown at the bottom of the post
@@ -57,6 +69,7 @@ not_found:
 # ----- Posts related labels -----
 
 post:
+<<<<<<< HEAD
   published: 发表于
   updated: 更新于
   timeago:
@@ -64,6 +77,11 @@ post:
     hour: 小时前
     minute: 分钟前
     just_now: 刚刚
+=======
+  written_by: 作者
+  posted: 发表于
+  updated: 更新于
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   words: 字
   pageview_measure: 次浏览
   read_time:
@@ -74,8 +92,15 @@ post:
   button:
     next: 下一篇
     previous: 上一篇
+<<<<<<< HEAD
     copy:
       title: 分享链接
+=======
+    copy_code:
+      succeed: 已复制！
+    share_link:
+      title:  分享链接
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       succeed: 链接已复制！
   # pinned prompt of posts list on homepage
   pin_prompt: 顶置

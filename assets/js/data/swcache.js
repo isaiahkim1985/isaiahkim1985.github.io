@@ -9,6 +9,7 @@ const resource = [
   /* --- CSS --- */
   '{{ "/assets/css/style.css" | relative_url }}',
 
+<<<<<<< HEAD
   /* --- JavaScripts --- */
   {% assign js_path = "/assets/js" | relative_url %}
   '{{ js_path }}/dist/home.min.js',
@@ -16,6 +17,9 @@ const resource = [
   '{{ js_path }}/dist/post.min.js',
   '{{ js_path }}/dist/categories.min.js',
   '{{ js_path }}/data/search.json',
+=======
+  /* --- PWA --- */
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   '{{ "/app.js" | relative_url }}',
   '{{ "/sw.js" | relative_url }}',
 
@@ -26,6 +30,7 @@ const resource = [
     '{{ tab.url | relative_url }}',
   {% endfor %}
 
+<<<<<<< HEAD
   /* --- Favicons --- */
   {% assign favicon_path = "/assets/img/favicons" | relative_url %}
 
@@ -38,18 +43,36 @@ const resource = [
   '{{ favicon_path }}/mstile-150x150.png',
   '{{ favicon_path }}/site.webmanifest',
   '{{ favicon_path }}/browserconfig.xml'
+=======
+  /* --- Favicons & compressed JS --- */
+  {% assign cache_list = site.static_files | where: 'swcache', true  %}
+  {% for file in cache_list %}
+    '{{ file.path | relative_url }}'{%- unless forloop.last -%},{%- endunless -%}
+  {% endfor %}
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 
 ];
 
 /* The request url with below domain will be cached */
 const allowedDomains = [
+<<<<<<< HEAD
   {% if site.google_analytics.id != '' %}
+=======
+  {% if site.google_analytics.id != empty and site.google_analytics.id %}
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     'www.googletagmanager.com',
     'www.google-analytics.com',
   {% endif %}
 
   '{{ site.url | split: "//" | last }}',
 
+<<<<<<< HEAD
+=======
+  {% if site.img_cdn contains '//' and site.img_cdn %}
+    '{{ site.img_cdn | split: '//' | last | split: '/' | first }}',
+  {% endif %}
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   'fonts.gstatic.com',
   'fonts.googleapis.com',
   'cdn.jsdelivr.net',

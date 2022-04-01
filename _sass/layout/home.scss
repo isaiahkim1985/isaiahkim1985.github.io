@@ -22,10 +22,15 @@
       border-radius: 50%;
       border: 1px solid var(--btn-paginator-border-color);
       background-color: var(--button-bg);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       &:hover {
         background-color: var(--btn-paginator-hover-color);
       }
     }
+<<<<<<< HEAD
     &.active {
       .page-link {
         background-color: var(--btn-active-bg);
@@ -36,12 +41,29 @@
     }
     &.disabled {
       cursor: not-allowed;
+=======
+
+    &.active {
+      .page-link {
+        background-color: var(--btn-paginator-hover-color);
+        color: var(--btn-text-color);
+      }
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       .page-link {
         color: rgba(108, 117, 125, 0.57);
         border-color: var(--btn-paginator-border-color);
         background-color: var(--button-bg);
       }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     &:first-child .page-link,
     &:last-child .page-link {
       border-radius: 50%;
@@ -71,9 +93,20 @@
     .post-meta {
       i {
         font-size: 0.73rem;
+<<<<<<< HEAD
       }
       span:not(:last-child) {
         margin-right: 1.2rem;
+=======
+
+        &:not(:first-child) {
+          margin-left: 1.2rem;
+        }
+      }
+
+      em {
+        @extend %normal-font-style;
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       }
     }
 
@@ -81,6 +114,10 @@
       margin-top: 0.6rem;
       margin-bottom: 0.6rem;
       color: var(--post-list-text-color);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       > p {
         /* Make preview shorter on the homepage */
         margin: 0;
@@ -98,13 +135,20 @@
         padding-left: 3px;
         color: var(--pin-color);
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       > span {
         display: none;
       }
     }
 
   } // .post-preview
+<<<<<<< HEAD
 
+=======
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 } // #post-list
 
 /* Hide SideBar and TOC */
@@ -124,9 +168,15 @@
 
 /* Sidebar is visible */
 @media all and (min-width: 831px) {
+<<<<<<< HEAD
 
   #post-list {
     margin-top: 1.5rem;
+=======
+  #post-list {
+    margin-top: 1.5rem;
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     .post-preview .post-meta {
       .pin {
         background: var(--pin-bg);

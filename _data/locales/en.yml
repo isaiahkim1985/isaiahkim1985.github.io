@@ -16,6 +16,7 @@ tabs:
   archives: Archives
   about: About
 
+<<<<<<< HEAD
 # text displayed in the search bar
 search:
   hint: search
@@ -34,6 +35,19 @@ date_format:
     short: '%b %e'
     archive_month: '%b'
 
+=======
+# the text displayed in the search bar & search results
+search:
+  hint: search
+  cancel: Cancel
+  no_results: Oops! No result founds.
+
+panel:
+  lastmod: Recently Updated
+  trending_tags: Trending Tags
+  toc: Contents
+
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 copyright:
   # Shown at the bottom of the post
   license:
@@ -58,6 +72,7 @@ not_found:
 # ----- Posts related labels -----
 
 post:
+<<<<<<< HEAD
   published: 'on'
   updated: Updated
   timeago:
@@ -65,6 +80,11 @@ post:
     hour: hr ago
     minute: min ago
     just_now: just now
+=======
+  written_by: By
+  posted: Posted
+  updated: Updated
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   words: words
   pageview_measure: views
   read_time:
@@ -75,7 +95,13 @@ post:
   button:
     next: Newer
     previous: Older
+<<<<<<< HEAD
     copy:
+=======
+    copy_code:
+      succeed: Copied!
+    share_link:
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       title: Copy link
       succeed: Link copied successfully!
   # pinned prompt of posts list on homepage

@@ -3,12 +3,18 @@
 */
 
 $(function() {
+<<<<<<< HEAD
 
   const btnSbTrigger = $("#sidebar-trigger");
   const btnSearchTrigger = $("#search-trigger");
   const btnCancel = $("#search-cancel");
   const btnClear = $("#search-cleaner");
 
+=======
+  const btnSbTrigger = $("#sidebar-trigger");
+  const btnSearchTrigger = $("#search-trigger");
+  const btnCancel = $("#search-cancel");
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   const main = $("#main");
   const topbarTitle = $("#topbar-title");
   const searchWrapper = $("#search-wrapper");
@@ -33,8 +39,12 @@ $(function() {
     };
   }());
 
+<<<<<<< HEAD
 
   /*--- Actions in small screens (Sidebar unloaded) ---*/
+=======
+  /*--- Actions in mobile screens (Sidebar hidden) ---*/
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 
   const mobileSearchBar = (function () {
     return {
@@ -75,7 +85,10 @@ $(function() {
             hints.removeClass("unloaded");
           }
           resultWrapper.addClass("unloaded");
+<<<<<<< HEAD
           btnClear.removeClass("visible");
+=======
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
           main.removeClass("unloaded");
 
           // now the release method must be called after $(#main) display
@@ -92,7 +105,10 @@ $(function() {
 
   }());
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   function isMobileView() {
     return btnCancel.hasClass("loaded");
   }
@@ -116,6 +132,7 @@ $(function() {
     searchWrapper.removeClass("input-focus");
   });
 
+<<<<<<< HEAD
   input.on("keyup", function(e) {
     if (e.keyCode === 8 && input.val() === "") {
       if (!isMobileView()) {
@@ -134,10 +151,25 @@ $(function() {
         if (isMobileView()) {
           hints.addClass("unloaded");
         }
+=======
+  input.on("input", () => {
+    if (input.val() === "") {
+      if (isMobileView()) {
+        hints.removeClass("unloaded");
+      } else {
+        resultSwitch.off();
+      }
+
+    } else {
+      resultSwitch.on();
+      if (isMobileView()) {
+        hints.addClass("unloaded");
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       }
     }
   });
 
+<<<<<<< HEAD
   btnClear.on("click", function() {
     input.val("");
     if (isMobileView()) {
@@ -150,4 +182,6 @@ $(function() {
     btnClear.removeClass("visible");
   });
 
+=======
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 });

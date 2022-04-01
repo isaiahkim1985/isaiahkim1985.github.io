@@ -81,7 +81,11 @@
 {% if index_list.size > 0 %}
   <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
     <h3 class="pt-2 mt-1 mb-4 ml-1"
+<<<<<<< HEAD
       data-toc-skip>{{ site.data.locales[site.lang].post.relate_posts | default: 'Further Reading' }}</h3>
+=======
+      data-toc-skip>{{ site.data.locales[lang].post.relate_posts }}</h3>
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     <div class="card-deck mb-4">
     {% for entry in index_list %}
       {% assign index = entry | plus: 0 %}
@@ -94,7 +98,11 @@
             <div class="text-muted small">
               <p>
                 {% include no-linenos.html content=post.content %}
+<<<<<<< HEAD
                 {{ content | markdownify | strip_html | truncate: 200 }}
+=======
+                {{ content | markdownify | strip_html | truncate: 200 | escape }}
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
               </p>
             </div>
           </div>

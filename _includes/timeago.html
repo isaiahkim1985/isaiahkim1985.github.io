@@ -1,5 +1,6 @@
 <!--
   Date format snippet
+<<<<<<< HEAD
   See: /assets/js/_utils/timeage.js
 -->
 
@@ -25,3 +26,18 @@
   {%- endif -%}
   <i class="unloaded">{{ include.date | date_to_xmlschema }}</i>
 </span>
+=======
+  See: ${JS_ROOT}/utils/timeago.js
+-->
+
+<em class="timeago{% if include.class %} {{ include.class }}{% endif %}"
+    data-ts="{{ include.date | date: '%s' }}"
+    {% if include.tooltip %}
+      data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll"
+    {% endif %}
+    {% if include.capitalize %}
+      data-capitalize="true"
+    {% endif %}>
+  {{ include.date | date: '%Y-%m-%d' }}
+</em>
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe

@@ -2,7 +2,11 @@
 
 -
   type: github
+<<<<<<< HEAD
   icon: 'fab fa-github-alt'
+=======
+  icon: 'fab fa-github'
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 -
   type: twitter
   icon: 'fab fa-twitter'

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: 'Continuous Integration'
 on:
   push:
@@ -5,12 +6,25 @@ on:
       - 'production'
     tags-ignore:
       - '*'
+=======
+name: 'CI'
+on:
+  push:
+    branches-ignore:
+      - 'release/**'
+      - 'docs'
+    tags-ignore:
+      - '**'
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     paths-ignore:
       - '.github/**'
       - '!.github/workflows/ci.yml'
       - '.travis.yml'
       - '.gitignore'
+<<<<<<< HEAD
       - 'docs/**'
+=======
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
       - 'README.md'
       - 'LICENSE'
   pull_request:
@@ -18,17 +32,26 @@ on:
       - '**'
 
 jobs:
+<<<<<<< HEAD
   ci:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
 
+=======
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: [2.5, 2.6, 2.7, 3]
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0  # for posts's lastmod
+<<<<<<< HEAD
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -45,3 +68,12 @@ jobs:
       - name: Test Site
         run: |
           bash tools/test.sh
+=======
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: Test Site
+        run: bash tools/deploy.sh --dry-run
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe

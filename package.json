@@ -1,5 +1,6 @@
 {
   "name": "jekyll-theme-chirpy",
+<<<<<<< HEAD
   "version": "4.1.0",
   "description": "A minimal, sidebar, responsive web design Jekyll theme that focuses on text presentation.",
   "main": "index.js",
@@ -9,6 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+=======
+  "version": "5.1.0",
+  "description": "A minimal, responsive, and powerful Jekyll theme for presenting professional writing.",
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
@@ -19,12 +24,20 @@
     "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
   },
   "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy#readme",
+<<<<<<< HEAD
   "dependencies": {
+=======
+  "devDependencies": {
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-insert": "^0.5.0",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2",
+<<<<<<< HEAD
     "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
+=======
+    "uglify-js": "^3.14.3"
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   }
 }

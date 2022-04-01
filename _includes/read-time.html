@@ -16,14 +16,26 @@
 {% endunless %}
 
 {% capture read_prompt %}
+<<<<<<< HEAD
   {{- site.data.locales[site.lang].post.read_time.prompt | default: "read" -}}
+=======
+  {{- site.data.locales[lang].post.read_time.prompt -}}
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 {% endcapture %}
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
+<<<<<<< HEAD
   title="{{ words }} {{ site.data.locales[site.lang].post.words | default: "words" }}">
   {{- read_time -}}{{" "}}{{- site.data.locales[site.lang].post.read_time.unit | default: "min" -}}
   {%- if include.prompt -%}
     {% unless site.lang contains 'zh' %}{{" "}}{% endunless %}{{ read_prompt }}
+=======
+  title="{{ words }} {{ site.data.locales[lang].post.words }}">
+  <em>{{- read_time -}}{{" "}}{{- site.data.locales[lang].post.read_time.unit -}}</em>
+  {%- if include.prompt -%}
+    {%- assign _prompt_words = read_prompt | number_of_words: 'auto' -%}
+    {%- unless _prompt_words > 1 -%}{{ " " }}{%- endunless -%}{{ read_prompt }}
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
   {%- endif -%}
 </span>

@@ -2,9 +2,15 @@
 
 <!-- 
 Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+<<<<<<< HEAD
 -->
 
 e.g. Fixes #(issue)
+=======
+
+e.g. Fixes #(issue)
+-->
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 
 ## Type of change
 
@@ -22,13 +28,18 @@ Please select the desired item checkbox and change it to "[x]", then delete opti
 Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
 -->
 
+<<<<<<< HEAD
 - [ ] I have run `bash ./tools/test.sh --build` (at the root of the project) locally and passed
+=======
+- [ ] I have run `bash ./tools/deploy.sh --dry-run` (at the root of the project) locally and passed
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
 - [ ] I have tested this feature in the browser
 
 ### Test Configuration
 
 - Browser type & version:
 - Operating system:
+<<<<<<< HEAD
 - Bundler version:
 - Ruby version:
 - Jekyll version:
@@ -42,3 +53,16 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] Any dependent changes have been merged and published in downstream modules
+=======
+- Ruby version: <!-- by running: `ruby -v` -->
+- Bundler version: <!-- by running: `bundle -v`-->
+- Jekyll version: <!-- by running: `bundle list | grep " jekyll "` -->
+
+### Checklist
+
+<!-- Select checkboxes by change the "[ ]" to "[x]" -->
+- [ ] I have performed a self-review of my code
+- [ ] I have commented on my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+>>>>>>> 339321defc3aec22b7e4a86af8fffb659a57e5fe
