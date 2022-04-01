@@ -1,15 +1,10 @@
 ---
 layout: post
-title:  "블로그 포스팅 테스트.."
+title:  "test.."
 date:   2022-04-01 23:25:07 +0530
 categories: Life ETC
 ---
-블로그를 테스트 합니다...
-
-글이 똑바로 써지는지.. 포스팅한것이 똑바로 보이는지 올라오는지 확인 합니다.
-
-아래는 템플릿 셈플 입니다.
-
+test...
 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
