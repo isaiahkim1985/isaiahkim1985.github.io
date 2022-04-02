@@ -20,14 +20,18 @@ toc_sticky: true
 드디어 본사에서 솔루션 개발이다..
 
 
+
 ![transparent red overlay]({{ '/assets/images/life/20220331_001.jpg' | relative_url }})
+박주희 선임님의 자가용으로 철수짐을 옮겼다. 덕분에 편안하게 철수하였다.
 
 ![transparent red overlay]({{ '/assets/images/life/20220331_002.jpg' | relative_url }})
+바리바리... 뒤에 짐을 싣고 홍이 가운데 찌부된거 같아서 미안했음..
 
 ![transparent red overlay]({{ '/assets/images/life/20220331_003.jpg' | relative_url }})
-본사 근처 카페... 커피 좋고 분위기 좋음.
+본사 근처 카페... 커피 좋고 분위기 좋음. 
 
 ![transparent red overlay]({{ '/assets/images/life/20220331_004.jpg' | relative_url }})
+무사히 본사로 복귀.
 ---
 
 
