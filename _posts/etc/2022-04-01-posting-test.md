@@ -1,6 +1,6 @@
 ---
 title: "포스팅 테스트 입니다."
-excerpt: "테스트를 해보자스
+excerpt: "테스트를 해보자.."
 
 categories: 
   - ETC
